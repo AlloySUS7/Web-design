@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Fit (Category:Female)</title>
+    <link rel="stylesheet" href="homepageF_style.css"> 
+    <link rel="stylesheet" href="MUST.css"> 
+    <link rel="stylesheet" href="female.css">
+    <script src="countdown.js"></script>
+    <script src="autoslider.js"></script>
+
+</head>
+<body>
+  <!--Wrapper/Side Panel-->
+
+  <div class="wrapper side-panel-open">
+    <button class="wrapper-toggle" type="button">
+      <img src="images/livechat-icon.png" class="wrapper-icon-open">
+      <img src="images/livechat-icon.png" class="wrapper-icon-close">
+    </button>
+    <section class="side-panel">
+      <div class="chatbox">
+        <h3>Live Chat Server</h3>
+        <hr>
+        <img src="images/ohheyitsryanreynolds.png">
+        <p>Sorry, live chat servers are down.</p>
+        <p>Please contact us <a href="aboutus.html#location-and-contacts">Here</a> while we fix it.</p>
+        <hr>
+        <div class="messagebox">
+          <h4>Message</h4>
+          <div>
+            <input type="text" placeholder=" Live chat services are down...">
+          </div>
+        </div>
+        <hr>
+      </div>
+    </section>
+    <script>
+        document.querySelector(".wrapper-toggle").addEventListener("click", () => {
+          document.querySelector(".wrapper").classList.toggle("side-panel-open");
+      });
+    </script>
+  </div>
+
+  <!--Wrapper/Side Panel-->
+
+    <!--Banner-->
+  <header>
+      <nav class="barBar">
+        <div class="logo">
+            <a href="homepage.html#"><img src="images/logo.png" alt="FreshFit" title="FreshFit Home"></a>
+        </div>
+
+        <div class="searchBox">
+            <input type="search" placeholder="Search...">
+        </div>
+
+        <div class="navMenu">
+          <ol>
+            <li><img src="images/menu.png"></li>
+              <div class="Menu">
+                <ol>
+                  <li><a href="homepage.html#">Home</a></li>
+                  <li><a href="membership.html#membership">Membership</a></li>
+                  <li><a href="homepage.html#category-title">Categories</a></li>
+                  <li><a href="aboutus.html#aboutus">About Us</a></li>
+                  <li><a href="aboutus.html#faqs">FAQs</a></li>
+                  <li><a href="#socials">Socials</a></li>
+                  <li><a href="customer-review.html#contact-box">Feedback</a></li>
+                  <button onclick="myFunction()" class="darkmode-button">Toggle dark mode</button>
+                </ol>
+              </div>
+          </ol>
+        </div>
+      </nav>
+
+      <script> //dark mode button
+        function myFunction() {
+          var element = document.body;
+          element.classList.toggle("dark-mode");
+        }
+      </script>
+
+    </header>
+    <!--Banner-->
+    
+    <!--Slider-->
+    <section class="sliding">
+      <div class="slider">
+          <div class="slides">
+            <input type="radio" checked name="sliderButton" id="slide1">
+            <input type="radio" name="sliderButton" id="slide2">
+            <input type="radio" name="sliderButton" id="slide3">
+            <input type="radio" name="sliderButton" id="slide4">
+
+            <div class="slide first">
+              <a href="homepage.html#sale-title" title="Sale!"><img src="images/slide_sale.png" alt="sale"></a>
+            </div>
+
+            <div class="slide">
+              <a href="homepage.html#image-maps" title="Shop Now!"><img src="images/slide_shopnow.png" alt="shop now"></a>
+            </div>
+            <div class="slide">
+              <a href="homepage.html#bestselling-title" title="HOTS"><img src="images/slide_hots.png" alt="hots"></a>
+            </div>
+            <div class="slide">
+              <a href="membership.html#memberships" title="Free Voucher!"><img src="images/slide_voucher.png" alt="voucher"></a>
+            </div>
+            <div class="autoNavigation">
+              <div class="auto1"></div>
+              <div class="auto2"></div>
+              <div class="auto3"></div>
+              <div class="auto4"></div>
+            </div>
+
+          </div>
+          <div class="sliderNavigation">
+            <label for="slide1" class="sliderClick"></label>
+            <label for="slide2" class="sliderClick"></label>
+            <label for="slide3" class="sliderClick"></label>
+            <label for="slide4" class="sliderClick"></label>
+          </div>
+      </div>
+
+  </section>
+  <!--Slider-->
+
+    <!--Category(FTop)-->
+    <h1 id="top">Top</h1>
+    <p class="subcategory" id="p2"><strong>Short Sleeve</strong></p>
+    <p class="categoryline"> </p>
+    <div class="category" id="shirts">
+        <div class="fshirt1">
+        <a href="FMPD1.html"><img src="images/product12.jpg" alt="#"></a>
+        <aside class="desc"><strong>Knoted Color White Shirt</strong><p class="price"><br>RM 65</p></br><div class="bestselling-rating">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          (92)
+        </div></aside>
+        </div>
+        <div class="fshirt1">
+        <a href="FMPD2.html"><img src="images/product13.jpg" alt="#"></a>
+        <aside class="desc"><strong>Cute Cat Print Shoulder Top</strong><p class="price"><br>RM 55</p><br><div class="bestselling-rating">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          (56)
+        </div></aside>
+        </div>
+    </div>
+    <p class="categoryline"> </p>
+
+    <p class="subcategory" id="p1"><strong>Long Sleeve</strong></p>
+    <p class="categoryline"> </p>
+    <div class="category">
+        <div class="fshirt1">
+        <a href="FMPD3.html"><img src="images/product7.jpg" alt="#"></a>
+        <aside class="desc"><strong>Cropped Ribbed Knit Turtleneck sweater</strong><p class="price"><br>RM 69</p><br><div class="bestselling-rating">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          (32)
+        </div></aside>
+        </div>
+        <div class="fshirt1">
+        <a href="FMPD4.html"><img src="images/product14.jpg" alt="#"></a>
+        <aside class="desc"><strong>2 In 1 Letter Sun & Moon Graphic Top</strong><p class="price"><br>RM 60</p><br><div class="bestselling-rating">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          (55)
+        </div></aside>
+        </div>
+    </div>  
+    <p class="categoryline"> </p>
+    <h1 id="bottom">Bottom</h1>
+    <p class="categoryline"> </p>
+    <p class="subcategory" id="p3"><strong>Long Pants</strong></p>
+    <p class="categoryline"> </p>
+    <div class="category" id="pants">
+      <div class="fshirt1">
+        <a href="FMPD5.html"><img src="images/product5.jpg" alt="#"></a>
+        <aside class="desc"><strong>Garfield Print Jeans</strong><p class="price"><br>RM 62</p></br><div class="bestselling-rating">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          (92)
+        </div></aside>
+        </div>
+        <div class="fshirt1">
+        <a href="FMPD6.html"><img src="images/product16.jpg" alt="#"></a>
+        <aside class="desc"><strong>Classic Black Sweatpants</strong><p class="price"><br>RM 60</p><br><div class="bestselling-rating">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          (42)
+        </div></aside>
+        </div>
+    </div>
+    <p class="categoryline" id="shorts"> </p>
+    <p class="subcategory" id="p4"><strong>Short Pants</strong></p>
+    <p class="categoryline"> </p>
+    <div class="category" id="shorts">
+        <div class="fshirt1">
+        <a href="FMPD7.html"><img src="images/product17.jpg" alt="#"></a>
+        <aside class="desc"><strong>Comfy Sport Shorts</strong><p class="price"><br>RM 45</p><br><div class="bestselling-rating">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          (69)
+        </div></aside>
+        </div>
+        <div class="fshirt1">
+        <a href="FMPD8.html"><img src="images/product18.jpg" alt="#"></a>
+        <aside class="desc"><strong>Garter Bell Shorts</strong><p class="price"><br>RM 57</p><br><div class="bestselling-rating">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          (102)
+        </div></aside>
+        </div>
+    </div>
+    <p class="categoryline" id="skirts"> </p>
+    <p class="subcategory" id="p5"><strong>Skirt</strong></p>
+    <p class="categoryline"> </p>
+    <div class="category" id="skirt">
+      <div class="fshirt1">
+        <a href="FMPD9.html"><img src="images/product15.jpg" alt="#"></a>
+        <aside class="desc"><strong>Black Asymmetrical Pleated Mini Skirt</strong><p class="price"><br>RM 67</p><br><div class="bestselling-rating">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          (45)
+        </div></aside>
+        </div>
+        <div class="fshirt1">
+        <a href="FMPD10.html"><img src="images/product19.jpg" alt="#"></a>
+        <aside class="desc"><strong>High Waist Pleated Skirt</strong><p class="price"><br>RM 44</p><br><div class="bestselling-rating">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          <img src="images/star.png">
+          (121)
+        </div></aside>
+        </div>
+    </div>
+    <p class="categoryline"> </p>
+</body>
+
+<footer>
+  <section>
+  <div class="row">
+      <div class="col">
+          <a href="homepage.html#"><img src="images/logo.png" class="footerlogo"></a>
+          <p>Check out our Socials to stay updated on our upcoming product</p>
+          <p>© 2022 Fresh Fit Official - All rights reserved. LICENCE # 2224/I/1911 and 5157/I/1886</p>
+      </div>
+
+      <div class="col">
+          <h2>Links</h2>
+          <ul>
+            <h3>
+              <li><a href="privacy_policy.html" title="Privacy Policy">Privacy Policy</a></li>
+              <li><a href="customer-review.html" title="Customer Service">Customer Service</a></li>
+              <li><a href="aboutus.html#aboutus" title="About Us">About Us</a></li>
+              <li><a href="aboutus.html#faqs" title="FAQs">FAQs</a></li>
+            </h3>
+          </ul>
+      </div>
+
+      <div class="col">
+        <h2>Newsletter</h2>
+        <form class="newsletter">
+          <input type="email" placeholder="Enter your email id" required>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div class="social-icons" id="socials">
+        <h2>Our Socials</h2>
+        <ul>
+          <li><a href="https://discord.gg/auuKEf6Wn4" target=_blank><img src="images/discord.png" alt="Discord" title="Discord"></a></li>
+          <li><a href="https://www.instagram.com/freshfitwd/" target="_blank"><img src="images/instagram.png" alt="Instagram" title="Instagram"></a></li>
+          <li><a href="https://twitter.com/freshfitwd" target="_blank"><img src="images/twitter.png" alt="Twitter" title="Twitter"></a></li>
+        </ul>
+      </div>
+  
+  </div>
+
+  <hr>
+  </section>
+</footer>
+      
+      </html>

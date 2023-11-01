@@ -1,0 +1,81 @@
+
+body{
+    width:100%;
+}
+h1{
+    font-family:fantasy;
+    padding: 0px 75px;
+    background-color:rgb(221,91,84);
+    color:rgb(19,40,34);
+    display:flex;
+    border-bottom:10px solid rgb(104,42,39);
+}
+html{
+    background-image:linear-gradient(45deg,black,#52FFD3, rgb(57,93,119));
+    background-size:1000%;
+    animation:bg-gradient 10s infinite alternate;
+
+}
+@keyframes bg-gradient{
+    0% {background-position: left;}
+    100% {background-position: right;}
+}
+body div.category{
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:rgb(221,91,84);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0);
+}
+.category img{
+    height: 300px;
+    width: 300px;
+    justify-content:center;
+}
+.categoryline{
+    height:10px;
+    width:75%;
+    background-color:rgb(221,91,84);
+    margin-left:auto;
+    margin-right:auto;
+}
+.category{
+    display:grid;
+    grid-template-columns: auto auto;
+}
+div .fshirt1{
+    display:flex;
+    margin: 10% 20%;
+    transition: all 0.3s linear;
+    justify-content:center;
+}
+div .desc{
+    display:none;
+    opacity:0;
+    transition: all 0.5s linear;
+    justify-content:center;
+}
+div .fshirt1:hover {
+    display:block;
+    transition:scale(1.1);
+    border: 9px solid rgb(193,9,0);
+}
+div .fshirt1:hover .desc{
+    display:flex;
+    opacity:1;
+    background-color:rgb(255,238,237);
+    border: 9px solid rgb(117,44,41);
+    padding: 2% 2%;
+    font-size:15px;
+    position:absolute;
+    word-wrap:break-word;
+}
+.bestselling-rating img{
+    width: 10px;
+    height:20px;
+}
+p.subcategory{
+    font-size:2em;
+    text-align:center;
+    font-weight: 1000;
+}

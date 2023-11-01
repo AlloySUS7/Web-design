@@ -1,0 +1,130 @@
+/*Slider Style*/
+.sliding{
+    background: linear-gradient(rgb(43, 45, 66),#52ffcb , rgb(221,91,84));
+    border-top: 8px solid rgb(43, 45, 66);
+}
+
+.slider{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 750px;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden
+}
+
+.slides{
+    width: 500%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 1s;
+}
+
+.slide img{
+    width: 750px;
+    height: 400px;
+}
+
+.sliderNavigation{
+    position: absolute;
+    width: 750px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.sliderClick{
+    border: 2px solid #3fbe9f;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.sliderClick:not(:last-child){
+    margin-right: 40px;
+}
+
+.sliderClick:hover{
+    background: #ff91fa;
+}
+#slide1:checked ~ .first{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#slide4:checked ~ .first{
+    margin-left: -60%;
+}
+
+#slide1:hover ~ .first{
+    margin-left: 0;
+}
+
+#slide2:hover ~ .first{
+    margin-left: -20%;
+}
+
+#slide3:hover ~ .first{
+    margin-left: -40%;
+}
+
+#slide4:hover ~ .first{
+    margin-left: -60%;
+}
+
+.autoNavigation{
+    position: absolute;
+    width: 750px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.autoNavigation div{
+    border: 2px solid #3fbe9f;
+    padding: 6px;
+    border-radius: 10px;
+    transition: 1s; 
+}
+
+.autoNavigation div:not(:last-child){
+    margin-right: 40px;
+}
+
+#slide1:checked ~ .autoNavigation .auto1{
+    background: #ff7bf8;
+}
+
+#slide2:checked ~ .autoNavigation .auto2{
+    background: #ff7bf8;
+}
+
+#slide3:checked ~ .autoNavigation .auto3{
+    background: #ff7bf8;
+}
+
+#slide4:checked ~ .autoNavigation .auto4{
+    background: #ff7bf8;
+}
+
+/*Slider Style*/
+
+
+

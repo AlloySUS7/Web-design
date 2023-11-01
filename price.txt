@@ -1,0 +1,9 @@
+ <div class="bestselling-rating">
+            <img src="images/star.png">
+            <img src="images/star.png">
+            <img src="images/star.png">
+            <img src="images/star.png">
+            <img src="images/star.png">
+            (243)
+          </div>
+          

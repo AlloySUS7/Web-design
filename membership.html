@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership</title>
+    <link rel="stylesheet" href="membership_style.css"> 
+    <link rel="stylesheet" href="MUST.css"> 
+</head>
+<body>
+  <!--Wrapper/Side Panel-->
+
+  <div class="wrapper side-panel-open">
+    <button class="wrapper-toggle" type="button">
+      <img src="images/livechat-icon.png" class="wrapper-icon-open">
+      <img src="images/livechat-icon.png" class="wrapper-icon-close">
+    </button>
+    <section class="side-panel">
+      <div class="chatbox">
+        <h3>Live Chat Server</h3>
+        <hr>
+        <img src="images/ohheyitsryanreynolds.png">
+        <p>Sorry, live chat servers are down.</p>
+        <p>Please contact us <a href="aboutus.html#location-and-contacts">Here</a> while we fix it.</p>
+        <hr>
+        <div class="messagebox">
+          <h4>Message</h4>
+          <div>
+            <input type="text" placeholder=" Live chat services are down...">
+          </div>
+        </div>
+        <hr>
+      </div>
+    </section>
+    <script>
+        document.querySelector(".wrapper-toggle").addEventListener("click", () => {
+          document.querySelector(".wrapper").classList.toggle("side-panel-open");
+      });
+    </script>
+  </div>
+
+  <!--Wrapper/Side Panel-->
+
+    <!--Banner-->
+  <header>
+      <nav class="barBar">
+        <div class="logo">
+            <a href="homepage.html#"><img src="images/logo.png" alt="FreshFit" title="FreshFit Home"></a>
+        </div>
+
+        <div class="searchBox">
+            <input type="search" placeholder="Search...">
+        </div>
+
+        <div class="navMenu">
+          <ol>
+            <li><img src="images/menu.png"></li>
+              <div class="Menu">
+                <ol>
+                  <li><a href="homepage.html#">Home</a></li>
+                  <li><a href="membership.html#membership">Membership</a></li>
+                  <li><a href="homepage.html#category-title">Categories</a></li>
+                  <li><a href="aboutus.html#aboutus">About Us</a></li>
+                  <li><a href="aboutus.html#faqs">FAQs</a></li>
+                  <li><a href="#socials">Socials</a></li>
+                  <li><a href="customer-review.html#contact-box">Feedback</a></li>
+                  <button onclick="myFunction()" class="darkmode-button">Toggle dark mode</button>
+                </ol>
+              </div>
+          </ol>
+        </div>
+      </nav>
+
+      <script> //dark mode button
+        function myFunction() {
+          var element = document.body;
+          element.classList.toggle("dark-mode");
+        }
+      </script>
+
+    </header>
+    <!--Banner-->
+
+  <section class="memberships" id="memberships">
+    <div class="container">
+        <div class="col-1">
+          <img src="images/premium-text.png" class="membership">
+          <img src="images/membership-text.png" class="membership">
+            <ul>
+              <li><img src="images/arrow.png"> Purchase membership for more benefits !</li>
+              <li><img src="images/arrow.png"> Unlimited Free Shipping !</li>
+              <li><img src="images/arrow.png"> Free Birthday Gift !</li>
+              <li><img src="images/arrow.png"> Free Daily Vouchers !</li>
+              <li><img src="images/arrow.png"> Free Mystery Gift for every 5 Items Purchased !</li>
+              
+            </ul>
+        </div>
+
+        <div class="col-2">
+      
+          <h2><img src="images/arrow.png">Membership Plans</h2>
+          <form class="membership-form">
+              <label for="Free">
+                  <input type="radio" name="Plans" id="Free" class="redbtn">
+                  <span>RM1<small>/day</small></span> Temporary Subscription
+              </label>
+              <label for="Paid">
+                   <input type="radio" name="Plans" id="Paid" class="redbtn" checked>
+                   <span>RM20 <small>/month</small></span> No Limit
+              </label>
+              <br>
+              <p>YOUR NAME</p>
+              <input type ="text" placeholder=" Your Name" required>
+              <p>EMAIL ADDRESS</p>
+              <input type="email" placeholder=" Your Email Address" required>
+              <p>BANK ACCOUNT</p>
+              <input type="text" placeholder=" Your Bank Account No." required>
+              <button type="submit" class="subscribebtn">Subscribe</button>
+           
+          </form>
+        </div>
+    </div>
+  </section>
+
+</body>
+
+<footer>
+  <section>
+  <div class="row">
+      <div class="col">
+          <a href="homepage.html#"><img src="images/logo.png" class="footerlogo"></a>
+          <p>Check out our Socials to stay updated on our upcoming product</p>
+          <p>© 2022 Fresh Fit Official - All rights reserved. LICENCE # 2224/I/1911 and 5157/I/1886</p>
+      </div>
+
+      <div class="col">
+          <h2>Links</h2>
+          <ul>
+            <h3>
+              <li><a href="privacy_policy.html" title="Privacy Policy">Privacy Policy</a></li>
+              <li><a href="customer-review.html" title="Customer Service">Customer Service</a></li>
+              <li><a href="aboutus.html#aboutus" title="About Us">About Us</a></li>
+              <li><a href="aboutus.html#faqs" title="FAQs">FAQs</a></li>
+            </h3>
+          </ul>
+      </div>
+
+      <div class="col">
+        <h2>Newsletter</h2>
+        <form class="newsletter">
+          <input type="email" placeholder="Enter your email id" required>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div class="social-icons" id="socials">
+        <h2>Our Socials</h2>
+        <ul>
+          <li><a href="https://discord.gg/auuKEf6Wn4" target=_blank><img src="images/discord.png" alt="Discord" title="Discord"></a></li>
+          <li><a href="https://www.instagram.com/freshfitwd/" target="_blank"><img src="images/instagram.png" alt="Instagram" title="Instagram"></a></li>
+          <li><a href="https://twitter.com/freshfitwd" target="_blank"><img src="images/twitter.png" alt="Twitter" title="Twitter"></a></li>
+        </ul>
+      </div>
+  
+  </div>
+
+  <hr>
+  </section>
+</footer>
+
+</html>
